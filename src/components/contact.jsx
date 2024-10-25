@@ -8,6 +8,19 @@ export default function Contact() {
     const [showToast, setShowToast] = useState(false);
     const [toastMessage, setToastMessage] = useState('');
     const [toastType, setToastType] = useState('');
+    const [formData, setFormData] = useState({
+        from_name: '',
+        reply_to: '',
+        message: ''
+    });
+
+    function handleChange(e) {
+        const { name, value } = e.target;
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: value
+        }));
+    }
 
     function sendEmail(e) {
         e.preventDefault();
@@ -18,6 +31,7 @@ export default function Contact() {
                 setToastMessage('Message has been sent successfully!');
                 setToastType('success');
                 setShowToast(true);
+                setFormData({ from_name: '', reply_to: '', message: '' }); // Reset form data
                 setTimeout(() => setShowToast(false), 3000);
             }, (error) => {
                 console.log(error.text);
@@ -101,26 +115,45 @@ export default function Contact() {
                     <div className="w-full border-b p-3">
                         <label>
                             Name:
-                            <input className='ml-2' type="text" name="from_name" required />
+                            <input
+                                className='ml-2'
+                                type="text"
+                                name="from_name"
+                                value={formData.from_name}
+                                onChange={handleChange}
+                                required
+                            />
                         </label>
                     </div>
                     <div className="w-full border-b p-3">
                         <label>
                             Email:
-                            <input className='ml-2' type="email" name="reply_to" required />
+                            <input
+                                className='ml-2'
+                                type="email"
+                                name="reply_to"
+                                value={formData.reply_to}
+                                onChange={handleChange}
+                                required
+                            />
                         </label>
                     </div>
                     <div className="w-full border-b p-3">
                         <label className='flex flex-row items-center'>
                             Message:
-                            <textarea className='ml-2' name="message" required></textarea>
+                            <textarea
+                                className='ml-2'
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                            ></textarea>
                         </label>
                     </div>
 
-                    <button type="submit" className="w-[101px] h-[40px] rounded-[20px] border border-[#FD8A18] mt-5">
+                    <button type="submit" className="w-[101px] h-[40px] rounded-[20px] border border-[#FD8A18] mt-5 hover:text-white hover:bg-gradient-to-br from-orange-400 to-red-500 ">
                         Submit
                     </button>
-
                 </div>
             </form>
 

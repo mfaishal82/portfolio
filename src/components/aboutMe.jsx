@@ -15,8 +15,8 @@ export default function AboutMe() {
                 What I do!
             </div>
 
-            <div className="flex flex-row flex-wrap gap-5 mt-5">
-                <div className="w-[333px] h-[169px] py-2 px-5  text-[20px] font-semibold bg-[#FFEBD1] rounded-[20px]">
+            <div className="flex flex-row flex-wrap justify-around space-y-5 mt-5 mb-5">
+                <div className="w-[333px] h-[185px] py-2 px-5  text-[20px] font-semibold bg-[#FFEBD1] rounded-[20px]">
                     <div className="flex flex-row items-center gap-2">
                         <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.8881 0L13.8481 0.4L10.1081 18L8.14812 17.6L11.8881 0ZM18.5881 9L14.9981 5.41V2.58L21.4181 9L14.9981 15.41V12.58L18.5881 9ZM0.578125 9L6.99813 2.58V5.41L3.40812 9L6.99813 12.58V15.41L0.578125 9Z" fill="#E80505" />
@@ -29,7 +29,7 @@ export default function AboutMe() {
                     </div>
                 </div>
 
-                <div className="w-[333px] h-[169px] py-2 px-5  text-[20px] font-semibold bg-[#F2F7FC] rounded-[20px]">
+                <div className="w-[333px] h-[185px] py-2 px-5  text-[20px] font-semibold bg-[#F2F7FC] rounded-[20px]">
                     <div className="flex flex-row items-center gap-2">
                         <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0.5H2C1.46957 0.5 0.960859 0.710714 0.585786 1.08579C0.210714 1.46086 0 1.96957 0 2.5V18.5C0 19.0304 0.210714 19.5391 0.585786 19.9142C0.960859 20.2893 1.46957 20.5 2 20.5H10C10.5304 20.5 11.0391 20.2893 11.4142 19.9142C11.7893 19.5391 12 19.0304 12 18.5V2.5C12 1.96957 11.7893 1.46086 11.4142 1.08579C11.0391 0.710714 10.5304 0.5 10 0.5ZM7 19.5H5V18.5H7V19.5ZM10 17.5H2V3.5H10V17.5Z" fill="url(#paint0_linear_207_10)" />
