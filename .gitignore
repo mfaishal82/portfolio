@@ -14,6 +14,7 @@ dist-ssr
 .env
 PP.png
 CV.pdf
+CV_.pdf
 .firebase
 dist
 .firebaserc

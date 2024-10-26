@@ -15,7 +15,7 @@ export default function AboutMe() {
                 What I do!
             </div>
 
-            <div className="flex flex-row flex-wrap justify-around space-y-5 mt-5 mb-5">
+            <div className="flex flex-row flex-wrap justify-around space-y-10 mt-5 mb-5">
                 <div className="w-[333px] h-[185px] py-2 px-5  text-[20px] font-semibold bg-[#FFEBD1] rounded-[20px]">
                     <div className="flex flex-row items-center gap-2">
                         <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">

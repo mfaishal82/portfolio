@@ -50,7 +50,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-row flex-wrap h-auto gap-14">
-                <div className="flex flex-row w-full justify-between mt-3">
+                <div className="flex flex-row max-[686px]:flex-col max-[686px]:gap-5 max-[686px]:ml-10  w-full justify-between mt-3">
                     {/* Phone */}
                     <div className="w-[288px] h-[115px] px-3 rounded-[9px] flex flex-col justify-center bg-[#FFEED9] ">
                         <div className="flex flex-row gap-2 font-semibold">
@@ -107,7 +107,7 @@ export default function Contact() {
             </div>
 
             <form onSubmit={sendEmail}>
-                <div className="w-full h-[340px] bg-[#F8FBFB] rounded-[20px] mt-14 p-8 flex flex-col justify-center">
+                <div className="w-full h-[340px] bg-[#F8FBFB] rounded-[20px] mt-14 max-[686px]:mt-8 p-8 flex flex-col justify-center">
                     <p>
                         I am always open to discussing <span className="font-semibold"> new projects, opportunities in tech world, partnerships </span> and more.
                     </p>
